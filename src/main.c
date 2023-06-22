@@ -32,9 +32,9 @@ main(void)
         {
             GPIO_ResetBits(GPIOE, GPIO_Pin_12 | GPIO_Pin_9);
             GPIO_SetBits(GPIOE, GPIO_Pin_10);
-            for (long i=0; i < SystemCoreClock/30; i++) {__NOP(); }
+            for (long i=0; i < SystemCoreClock/30; i++) {__NOP(); } // wait 1s
             GPIO_ResetBits(GPIOE, GPIO_Pin_10);
-            for (long i=0; i < SystemCoreClock/30; i++) {__NOP(); }
+            for (long i=0; i < SystemCoreClock/30; i++) {__NOP(); } // wait 1s
         }
  
         /*
